@@ -1,0 +1,69 @@
+#nav{
+	position: fixed;
+}
+.nav{
+	font-size: 20px; text-decoration: none; color: white; background-color: darkslateblue; padding: 10px 10px 10px 10px; margin: -5px;
+}
+.nav:hover{
+	background-color: wheat; color: brown;
+}
+.greenyellow{
+	color: greenyellow; text-align: center;
+}
+#body1{
+	background-color: skyblue; background-image: url(https://www.wipo.int/export/sites/www/shared/images/socialmedia/wipogreen_2020_news_0047_1200.jpg); background-position: top; background-repeat: no-repeat; background-size: 100%; background-attachment: fixed; font-family: 'Roboto', sans-serif; 
+}
+#subtitle{
+	font-size: 40px; color: wheat;
+}
+h1{
+	color: darkslateblue; font-family: verdana; font-size: 60px;
+}
+#author{
+	color: greenyellow; text-align: center;
+}
+h2,h3{
+	color: white; font-size: 30px;
+}
+#intro{
+	border: 2px solid wheat; padding: 20px 20px 20px 20px; text-align: center;
+}
+#company{
+	margin: -50px 0px -50px 0px;
+}
+.specs{
+	width: 100%; border-width: 3px; border-style: double; border-color: yellow; border-collapse: collapse; text-align: center; 
+}
+.specs th{
+	font-size: 30px; border-width: 3px; border-style: double; border-color: yellow; border-collapse: collapse; color: orange; text-align: center;
+}
+.specs td{
+	font-size: 25; border-width: 2px; border-style: double; border-color: yellow; border-collapse: collapse; color: white; text-align: center;
+}
+.pics{
+	border-radius: 15px;
+}
+.specs th:hover{
+	background-color: yellow;
+}
+label{
+	color: white;
+}
+#A380{
+	width:400px; height: 240px;
+}
+#j20{
+	width:400px; height: 240px;
+}
+#y20{
+	width:400px; height:240px;
+}
+#link{
+	color: white; text-decoration: none;
+}
+.tricol{
+	float: left; width: 33.3%; text-align: center;
+}
+.tricol p{
+	color: white;
+}
