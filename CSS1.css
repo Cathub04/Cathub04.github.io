@@ -24,6 +24,8 @@ body{
 	font-size: 70px;
 	color: white;
 	text-align: center;
+	padding-bottom: 20px;
+	border-bottom: solid 3px gold;
 }
 .col{
 	float: left;
@@ -55,3 +57,11 @@ body{
 form{
 	color: white;
 }
+iframe{width: 585px;
+ height: 390px;
+ border-style: ridge;
+ border-width: 15px;
+ border-color: lightseagreen;}
+ #quest:hover{
+ 	color: aquamarine;
+ }

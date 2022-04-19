@@ -17,5 +17,5 @@ function read2(){
 	document.getElementById('txt2').style.color = 'wheat'
 }
 function read3(){
-	document.getElementById('quest').style.color = 'wheat'
+	document.getElementById('txt3').style.color = 'wheat'
 }
