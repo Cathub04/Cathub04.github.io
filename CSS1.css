@@ -2,15 +2,17 @@ body{
 	background: linear-gradient(75deg,rgb(125, 114, 17) 1%, rgb(28, 115, 133) 100%);
 	background-attachment: fixed;
 	font-family: 'Lora', serif;
-
+	margin: 0;
 }
 #nav{
 	position: fixed;
 	background-color: rgb(255, 253, 130);
-	padding: 8px 0px 8px 0px;
-	font-size: 20px;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
 }
 .navs{
+	font-size: 20px;
+	float: left;
 	padding: 8px;
 	text-decoration: none;
 	color: salmon;
@@ -54,14 +56,27 @@ body{
 	font-size: 25px;
 	color: white;
 }
+#quest{
+
+	background-color: wheat;
+}
 form{
 	color: white;
+	border: dashed 3px salmon;
 }
+.vd{
+	float: left;
+	width: 50%;
+	color: salmon;
+	text-align: center;
+}
+#p1{text-align: left;}
 iframe{width: 585px;
  height: 390px;
- border-style: ridge;
+ border-style: inset;
  border-width: 15px;
- border-color: lightseagreen;}
+ border-color: cornsilk;
+}
  #quest:hover{
  	color: aquamarine;
- }
+}
