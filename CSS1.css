@@ -7,7 +7,8 @@ body{
 #nav{
 	position: fixed;
 	background-color: rgb(255, 253, 130);
-	padding: 8px 10px 8px 0px;
+	padding: 8px 0px 8px 0px;
+	font-size: 20px;
 }
 .navs{
 	padding: 8px;
@@ -15,6 +16,9 @@ body{
 	color: salmon;
 	border-left: solid orange 2px;
 	text-align: center;
+}
+.navs:hover{
+	background-color: darkkhaki;
 }
 #title{
 	font-size: 70px;
