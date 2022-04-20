@@ -11,13 +11,13 @@ function surprise(){
 	}
 }
 function read1(){
-	document.getElementById('txt1').style.color = 'wheat'
+	document.getElementById('ctxt1').style.color = 'wheat'
 }
 function read2(){
-	document.getElementById('txt2').style.color = 'wheat'
+	document.getElementById('ctxt2').style.color = 'wheat'
 }
 function read3(){
-	document.getElementById('txt3').style.color = 'wheat'
+	document.getElementById('ctxt3').style.color = 'wheat'
 }
 function prt(){
 	var names = ['Headstock','Nut','Machine head','Frets','Truss rod','Inlays','Neck','Heel(acoustic)Neckjoint(electric)','Body','Pickups','Electronics','Bridge','Pickguard','back','Soundboard','Body sides','Sound hole','Strings','Saddle','Fretboard/Fingerboard'];

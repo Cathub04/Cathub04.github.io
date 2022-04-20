@@ -65,9 +65,10 @@
 	padding: 10px;
 	background-color: wheat;
 }
-form{
+#cform{
 	color: white;
 	border: dashed 3px salmon;
+	font-size: 30px;
 }
 .vd{
 	float: left;
@@ -92,20 +93,20 @@ form{
 	text-align: center;
 	color: white;
 }
-#row1,#row2,#row3,#row5{
+#crow1,#crow2,#crow3,#crow5{
 	float: left;
 }
 .img1{
 	display: inline;
 }
-#row5{
+#crow5{
 	width: 100%;
 }
 #subtitle{
 	font-size: 50px;
 
 }
-#txt4{
+#ctxt4{
 	font-size: 40px;
 }
 #scroller{
@@ -132,6 +133,8 @@ form{
 /*Here started the Piano page*/
 #body2{
 	background-color: black;
+	color: white;
+	font-family: 'Lora', serif;
 	}
 #title{
 	font-size: 70px;
@@ -139,4 +142,37 @@ form{
 	text-align: center;
 	padding-bottom: 20px;
 	border-bottom: solid 3px gold;
+}
+#ctitle2{
+	font-size: 60px;
+}
+#cnav{
+	position: fixed;
+	background-color: rgb(168, 101, 42);
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.cnavs{
+	font-size: 20px;
+	float: left;
+	padding: 8px;
+	text-decoration: none;
+	color: wheat;
+	border-left: solid black 2px;
+	text-align: center;
+	cursor: pointer;
+}
+.cnavs:hover{
+	background-color: wheat;
+	color: rgb(168, 101, 42);
+}
+#cppic{
+	border: ridge 15px saddlebrown;
+	margin-bottom 50px;
+}
+.cintros{
+	font-size: 30px;
+	color: white;
+	padding: 0px 100px 0px 100px;
 }
