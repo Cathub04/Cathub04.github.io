@@ -19,3 +19,13 @@ function read2(){
 function read3(){
 	document.getElementById('txt3').style.color = 'wheat'
 }
+function prt(){
+	var names = ['Headstock','Nut','Machine head','Frets','Truss rod','Inlays','Neck','Heel(acoustic)Neckjoint(electric)','Body','Pickups','Electronics','Bridge','Pickguard','back','Soundboard','Body sides','Sound hole','Strings','Saddle','Fretboard/Fingerboard'];
+	var request = parseInt(prompt('Please enter the number in picture to know the name of it'));
+	alert('The component is called '+ names[request-1]);
+}
+
+function transport() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
