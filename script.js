@@ -29,3 +29,7 @@ function transport() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+function cchange(){
+	document.getElementById('cppic1').scr = "homepageStill.jpg"
+}

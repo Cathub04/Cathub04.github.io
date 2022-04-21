@@ -154,7 +154,7 @@
 	border-radius: 10px;
 }
 .cnavs{
-	font-size: 20px;
+	font-size: 25px;
 	float: left;
 	padding: 8px;
 	text-decoration: none;
@@ -167,12 +167,21 @@
 	background-color: wheat;
 	color: rgb(168, 101, 42);
 }
-#cppic{
+#cppic1{
 	border: ridge 15px saddlebrown;
 	margin-bottom 50px;
 }
+
 .cintros{
 	font-size: 30px;
 	color: white;
 	padding: 0px 100px 0px 100px;
+	line-height: 35px;
+}
+#divide{
+	margin: 10px 600px 10px 600px;
+	padding-bottom: 30px;
+	border-bottom: solid rgb(168, 101, 40) 6px;
+	text-align: center;
+	font-size: 50px;
 }
