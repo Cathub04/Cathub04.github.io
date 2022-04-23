@@ -216,3 +216,172 @@ th,td{
 	padding-bottom: 50px;
 	border-bottom: solid 3px wheat;
 }
+
+/*Mabel*/
+#gd{
+	background: linear-gradient(75deg,rgb(125, 114, 17) 1%, rgb(28, 115, 133) 100%);
+	background-attachment: fixed;
+	font-family: 'Lora', serif;
+
+}
+
+#vp{
+	background-color: black;
+	font-family: 'Lora', serif;
+	}
+
+.colum{
+	float: left;
+	width: 33%;
+	text-align: center;
+}
+
+.immg{
+	width: 300px;
+	height: 300px;
+	border-width: 20px;
+	border-radius: 20px;
+}
+
+.txt{
+	font-size: 175%;
+	text-align: center;
+	color: white;
+}
+
+.txt1{
+	font-size: 120%;
+	text-align: center;
+	color: white;
+}
+
+.txt2{
+	font-size: 250%;
+	color: white;
+	background-color: darkgray;
+	border-color: darkgray;
+	border-width: 20px;
+	border-radius: 20px;
+	margin-right: 150px;
+    margin-left: 150px;
+    padding: 10px;
+}
+
+.txt3{
+	font-size: 150%;
+	color: saddlebrown;
+	background-color: burlywood;
+	border-width: 20px;
+	border-radius: 20px;
+	margin-left: 400px;
+	margin-right: 400px;
+}
+.vid{
+	width: 400px;
+	height: 200px;
+	border-width: 15px;
+	border-radius: 20px;
+}
+
+.colume2{
+	float: right;
+	width: 35%;
+	padding-right: 150px;
+}
+
+.colume1{
+	float: left;
+	width: 35%;
+	padding-left: 150px;
+}
+
+.c11{
+	clear: both;
+}
+
+.a11{
+	text-decoration: none;
+}
+
+#txtt{
+	font-size: 400%;
+	text-align: center;
+	color: white;
+}
+
+#txtt2{
+	color: white;
+	font-size: 150%;
+}
+
+#txtt3{
+	color: white;
+	font-size: 150%;
+	text-align: center;
+}
+
+#immg{
+	width: 585px;
+	height: 390px;
+	border-style: ridge;
+	border-width: 15px;
+	border-color: saddlebrown;
+}
+
+#immg1{
+	width: 486px;
+	height: 563px;
+	border-width: 20px;
+	border-radius: 20px;
+}
+
+.b11{
+	font-size: 20px;
+	background-color: darkgray;
+	color: balck;
+	border-width: 4px;
+	border-radius: 20px;
+}
+
+.b22{
+	font-size: 15px;
+	background-color: saddlebrown;
+	color: yellow;
+	border-width: 4px;
+	border-radius: 20px;
+}
+
+#b33{
+	font-size: 20px;
+	background-color: rosybrown;
+	color: saddlebrown;
+	border-width: 7px;
+	border-radius: 20px;
+}
+.colum4{
+	float: left;
+	width: 25%;
+	color: white;
+	text-align: center;
+}
+
+#sss{
+	color: white;
+	text-align: center;
+}
+
+.img11{
+	margin-right:40px;
+	border-radius: 15px;
+	border: 2px solid whitesmoke;
+	width: 600px;
+	height: 400px;
+}
+
+.img33{
+	margin-left: 110px;
+	border-radius: 15px;
+	border: 2px solid whitesmoke;
+	width: 600px;
+	height: 400px;
+}
