@@ -175,7 +175,7 @@
 .cintros{
 	font-size: 30px;
 	color: white;
-	padding: 0px 100px 0px 100px;
+	padding: 20px 100px 20px 100px;
 	line-height: 35px;
 }
 #divide{
@@ -185,7 +185,7 @@
 	text-align: center;
 	font-size: 50px;
 }
-#csubtitle{
+.csubtitle{
 	text-align: center;
 	font-size: 40px;
 }
@@ -193,10 +193,26 @@
 	float: left;
 	text-align: center;
 	width: 50%;
+	margin-bottom: 50px;
 }
 span{
 	text-decoration: underline;
 }
 #cpr1{
 	display: block;
+}
+th,td{
+	border: ridge 4px goldenrod;
+	padding: 20px 0px 20px 0px;
+}
+#tb1{
+	display: none;
+}
+#cbt{
+	font-size: 40px;
+	background-color: wheat;
+}
+#tb1{
+	padding-bottom: 50px;
+	border-bottom: solid 3px wheat;
 }

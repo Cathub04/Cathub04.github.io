@@ -31,5 +31,10 @@ function transport() {
 }
 
 function cchange(){
-	document.getElementById('cppic1').scr = "homepageStill.jpg"
+	document.getElementById('cppic1').scr = "homepageStill.jpg";
+}
+
+function ctable(){
+	document.getElementById('tb1'). style.display="block";
+	document.getElementById('cbt'). style.display='none';
 }
