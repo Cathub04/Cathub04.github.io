@@ -109,6 +109,9 @@
 #ctxt4{
 	font-size: 40px;
 }
+#ctxt1,#ctxt2,#ctxt3,#ctxt4{
+	font-size: 30px;
+}
 #scroller{
 	position: fixed;
 	bottom: 30px;
