@@ -95,7 +95,7 @@ function shop4(){
 
 function shopp(){
     var a = parseFloat(prompt('please enter price 1'));
-    var b = parseFloat(prompt('please enter price 1'));
+    var b = parseFloat(prompt('please enter price 2'));
     alert("Your Price is $" + (a+b)*0.8);
 }
 
