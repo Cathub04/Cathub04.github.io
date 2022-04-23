@@ -215,9 +215,18 @@ th,td{
 	font-size: 40px;
 	background-color: wheat;
 }
-#tb1{
+#tb1{	
 	padding-bottom: 50px;
 	border-bottom: solid 3px wheat;
+}
+#cbtp{
+	color: darkgreen;
+	font-size: 40px;
+	background-color: greenyellow;
+	cursor: pointer;
+	text-shadow: 2px 2px rgb(42, 69, 18);
+	border: none;
+	border-radius: 5px;
 }
 
 /*Mabel*/
