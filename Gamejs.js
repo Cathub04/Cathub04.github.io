@@ -1,4 +1,4 @@
-var poke = ('Aa', 'Ab', 'Ac', 'Ad',
+var poker = ['Aa', 'Ab', 'Ac', 'Ad',
        'Ka', 'Kb', 'Kc', 'Kd',
        'Qa', 'Qb', 'Qc', 'Qd',
        'Ja', 'Jb', 'Jc', 'Jd',
@@ -11,12 +11,42 @@ var poke = ('Aa', 'Ab', 'Ac', 'Ad',
        '4a', '4b', '4c', '4d',
        '3a', '3b', '3c', '3d',
        '2a', '2b', '2c', '2d',
-       'J','j');
+       'J','j'];
 var cplayer = [];
 var ccom =[];
-
+var ctab =[];
+var ccardside = False;
+var cptomcard = '';
+var cctopcard = '';
 function csplit(){
-    for (var i = 0; i < 27; i++) {
-        cplayer.push(poke[Math.floor(Math.random()*poke.length)]);
+    for (var i = poker.length -1; i > 0; i--) {
+        var j = Math.floor(Math.random() * i)
+        var k = poker[i]
+        poker[i] = poker[j]
+         poker[j] = k;
     }
+    for (var i = 0; i<27 ;i++){
+        cplayer.push(poker[i]);
+        poker.splice(i,1);
+    }
+    for(var i =0 ; i<27 ; i++){
+        ccom.push(poker[i]);
+    }
+    console.log(cplayer);
+    console.log(ccom);  
+}
+
+function cprev(){
+    var i = Math.floor(Math.random()*cplayer.lenth)
+    var cptopcard= cplayer[i];  
+    cplayer.remove(i,1);
+}
+
+function ccrev(){
+    var cctopcard= ccom[i];  
+    cplayer.remove(i,1);
+}
+
+function cput(){
+    ctab.push(cptopcard)
 }
