@@ -41,9 +41,20 @@ function cview(){
     var cptopcard= cplayer[i];  
     cplayer.splice(i,1);
     ctab.push(cptopcard);
+    if(ctab.indexOf(cptopcard)!=-1&&ctab.length>=2){
+        var a = ctab.indexOf(cptopcard);
+        cplayer.push(ctab.slice[a]);
+        ctab.length=a;
+    };
     var k = Math.floor(Math.random()*ccom.length)
     var cctopcard= ccom[k];  
     ccom.splice(k,1);
     ctab.push(cctopcard)
     console.log(ctab);
+    if(ctab.indexOf(cctopcard)!=-1&&ctab.length>=2){
+        var b = ctab.indexOf(cctopcard);
+        ccom.push(ctab.slice[b]);
+        ctab.length=b;
+    };
 }
+
