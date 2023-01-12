@@ -15,7 +15,7 @@ var poker = ['Aa', 'Ab', 'Ac', 'Ad',
 var cplayer = [];
 var ccom =[];
 var ctab =[];
-var ccardside = False;
+var ccardside = false;
 var cptomcard = '';
 var cctopcard = '';
 function csplit(){
@@ -36,17 +36,14 @@ function csplit(){
     console.log(ccom);  
 }
 
-function cprev(){
-    var i = Math.floor(Math.random()*cplayer.lenth)
+function cview(){
+    var i = Math.floor(Math.random()*cplayer.length)
     var cptopcard= cplayer[i];  
-    cplayer.remove(i,1);
-}
-
-function ccrev(){
-    var cctopcard= ccom[i];  
-    cplayer.remove(i,1);
-}
-
-function cput(){
-    ctab.push(cptopcard)
+    cplayer.splice(i,1);
+    ctab.push(cptopcard);
+    var k = Math.floor(Math.random()*ccom.length)
+    var cctopcard= ccom[k];  
+    ccom.splice(k,1);
+    ctab.push(cctopcard)
+    console.log(ctab);
 }
