@@ -1,0 +1,15 @@
+#cbody{
+	background-color: #ddf7d7 ;
+}
+#ctitle{
+	font-size: 50px; text-align: center; color: #489e37;
+}
+#cpic1{
+	width: 100%; border-radius: 20px;
+}
+#crule{
+
+}
+#cdiv1{
+	background-image: src="https://media.wired.com/photos/5fbe703e534553a88817f988/16:9/w_2400,h_1350,c_limit/Sec_poker_914262206.jpg";
+}
