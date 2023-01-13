@@ -10,30 +10,36 @@ var poker = ['Aa', 'Ab', 'Ac', 'Ad',
        '5a', '5b', '5c', '5d',
        '4a', '4b', '4c', '4d',
        '3a', '3b', '3c', '3d',
-       '2a', '2b', '2c', '2d',
-       'J','j'];
+       '2a', '2b', '2c', '2d',];
 var cplayer = [];
 var ccom =[];
 var ctab =[];
+var cnum = [];//get number of cards
 var ccardside = false;
 var cptomcard = '';
 var cctopcard = '';
 function csplit(){
     for (var i = poker.length -1; i > 0; i--) {
-        var j = Math.floor(Math.random() * i)
-        var k = poker[i]
-        poker[i] = poker[j]
+        var j = Math.floor(Math.random() * i);
+        var k = poker[i];
+        poker[i] = poker[j];
          poker[j] = k;
     }
-    for (var i = 0; i<27 ;i++){
+    for (var i = 0; i<26 ;i++){
         cplayer.push(poker[i]);
         poker.splice(i,1);
+        //add card into cplayerhand
+        document.getElementById('cplayerhand').innerHTML+="<div id='ccard' style='background:url()'>"
+        //needs to fill the link of card
     }
-    for(var i =0 ; i<27 ; i++){
-        ccom.push(poker[i]);
-    }
+    //testing
+    ccom = poker
+    //for(var i =0 ; i<ccom.length ; i++){
+        //add card into ccomhand, link needed
+        /*document.getElementById('ccomhand').innerHTML+="<div id='ccard' style='background:url("index?")'>"
+    }*/
     console.log(cplayer);
-    console.log(ccom);  
+    console.log(ccom);
 }
 
 function cview(){
@@ -41,20 +47,37 @@ function cview(){
     var cptopcard= cplayer[i];  
     cplayer.splice(i,1);
     ctab.push(cptopcard);
-    if(ctab.indexOf(cptopcard)!=-1&&ctab.length>=2){
+    cnum.push(cptopcard.slice(0,1));
+    //put cptopcard, and number
+    for (var i = cnum.length - 1; i >= 0; i--) {
+        if (cptopcard.slice(0,1).indexOf(cptopcard)!=-1&&ctab.length>=2) {
+            var a = cnum.indexOf(cptopcard.slice(0,1));
+            cplayer.push(ctab.slice[a]);
+            ctab.length = a-1;
+            }
+    }
+    //or
+    /*if(cnum.indexOf(cptopcard.slice(0,1))!=-1&&ctab.length>=2){
         var a = ctab.indexOf(cptopcard);
         cplayer.push(ctab.slice[a]);
         ctab.length=a;
-    };
+    };*/
     var k = Math.floor(Math.random()*ccom.length)
     var cctopcard= ccom[k];  
     ccom.splice(k,1);
-    ctab.push(cctopcard)
+    ctab.push(cctopcard);
+    cnum.push(cctopcard.slice(0,1))
     console.log(ctab);
-    if(ctab.indexOf(cctopcard)!=-1&&ctab.length>=2){
+    if(ctab.slice(0,1).indexOf(cctopcard.slice(0,1))!=-1&&ctab.length>=2){
         var b = ctab.indexOf(cctopcard);
         ccom.push(ctab.slice[b]);
         ctab.length=b;
-    };
+    }
+    if (cplayer.length==0) {
+        alert('Gameover.you lose, refresh to restart')
+    }
+    else if (ccom.length==0) {
+        alert('Gameover.you win, refresh to restart')
+    }
 }
 
