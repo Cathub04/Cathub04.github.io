@@ -34,7 +34,8 @@
     background-size: 100%;
 }
 #ctitle{
-	font-size: 50px; text-align: center; color: #489e37;
+	font-size: 50px; text-align: center; color: #729fd8;
+	text-shadow: 3px 3px 5px black;
 }
 #cpic1{
 	width: 100%; border-radius: 20px;
@@ -85,4 +86,18 @@
 	top: 50%;
 	transform: translate(0,-50%);
 	text-align: center;
+}
+#ctitle2{
+	font-style: italic;
+}
+#cbody2{
+
+}
+#crd{
+	color: white;
+	text-shadow: 2px 3px black;
+}
+#cphand,#cchand{
+	color: salmon;
+	text-shadow: 2px 3px 3px red;
 }

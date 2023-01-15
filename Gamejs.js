@@ -45,8 +45,8 @@ function csplit(){
     document.getElementById('ccard1').style.backgroundImage="url('https://3cnan.github.io/ICS4U/HTML&CSS&JS/poker/"+ cplayer[0] + ".png')";
     cctops.innerHTML = "<div id='ccard2'></div>"
     document.getElementById('ccard2').style.backgroundImage="url('https://3cnan.github.io/ICS4U/HTML&CSS&JS/poker/"+ ccom[0] + ".png')";
-    document.getElementById('cphand').innerHTML='player'+cpnum;
-    document.getElementById('cchand').innerHTML='com'+ccnum;
+    document.getElementById('cphand').innerHTML='Player'+cpnum;
+    document.getElementById('cchand').innerHTML='Com'+ccnum;
     document.getElementById('bt1').style.display='none';
     document.getElementById('bt2').style.display='inline';
 }
@@ -104,7 +104,7 @@ function cview(){
                 }
         }
     cpnum = cplayer.length;
-    document.getElementById('cphand').innerHTML='player'+cpnum;
+    document.getElementById('cphand').innerHTML='Player'+cpnum;
     console.log("\n");
 
 
@@ -152,7 +152,7 @@ function cview(){
                 }
             }
         ccnum = ccom.length;//determine hand length
-        document.getElementById('cchand').innerHTML='com'+ccnum;//counter
+        document.getElementById('cchand').innerHTML='Com'+ccnum;//counter
         rdcount++;
         document.getElementById('crd').innerHTML='Round: '+rdcount;
         if (rdcount==20&&cplayer.length<ccom.length) {
