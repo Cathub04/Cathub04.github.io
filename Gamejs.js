@@ -1,3 +1,4 @@
+/*Crane js*/
 var poker = ['Aa', 'Ab', 'Ac', 'Ad',
              'Ka', 'Kb', 'Kc', 'Kd',
              'Qa', 'Qb', 'Qc', 'Qd',
@@ -26,7 +27,7 @@ var cchands = document.getElementById('cchand');
 var cpnum = cplayer.length;
 var ccnum = ccom.length;
 var rdcount = 0;
-// document.getElementById('bt3').style.display='none';
+document.getElementById('crd').innerHTML='Round: '+rdcount;
 function csplit(){
     for (var i = cpoker.length -1; i > 0; i--) {
         var j = Math.floor(Math.random() * i);
@@ -163,3 +164,4 @@ function cview(){
         }
     }, 200);
 }
+/*Crane JS ends here*/
