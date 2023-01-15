@@ -45,32 +45,34 @@ function csplit(){
     document.getElementById('ccard1').style.backgroundImage="url('https://3cnan.github.io/ICS4U/HTML&CSS&JS/poker/"+ cplayer[0] + ".png')";
     cctops.innerHTML = "<div id='ccard2'></div>"
     document.getElementById('ccard2').style.backgroundImage="url('https://3cnan.github.io/ICS4U/HTML&CSS&JS/poker/"+ ccom[0] + ".png')";
-    document.getElementById('cphand').innerHTML='Player'+cpnum;
-    document.getElementById('cchand').innerHTML='Com'+ccnum;
+    document.getElementById('cphand').innerHTML='player'+cpnum;
+    document.getElementById('cchand').innerHTML='com'+ccnum;
     document.getElementById('bt1').style.display='none';
     document.getElementById('bt2').style.display='inline';
 }
 
+
 function cview(){
-    cptopcard = cplayer.shift();//move card from hand to top
-    cptops.innerHTML = "<div id='ccard1'></div>"
-    document.getElementById('ccard1').style.backgroundImage="url('https://3cnan.github.io/ICS4U/HTML&CSS&JS/poker/"+ cplayer[0] + ".png')";
     document.getElementById('cstack').innerHTML = '';
     for(var i = 0; i<ctab.length; i++){
         document.getElementById('cstack').innerHTML += "<div class='ccard'></div>";
         document.getElementsByClassName('ccard')[i].style.backgroundImage="url('https://3cnan.github.io/ICS4U/HTML&CSS&JS/poker/"+ ctab[i] + ".png')";
     }
+    // shift out
+    cptopcard = cplayer.shift();//move card from hand to top
+    // show first card
+    document.getElementById('ccard1').style.backgroundImage="url('https://3cnan.github.io/ICS4U/HTML&CSS&JS/poker/"+ cplayer[0] + ".png')";
     var a = cnum.indexOf(cptopcard.slice(0,1));//index of repeated card
-    console.log(ctab);
-    
-    console.log(cplayer);
     if (a!=-1) {
-        
         var temp = ctab.slice(a);
         // console.log(temp);
         console.log(cplayer);
-        for(var i = 0; i<temp.length;i++){
-            cplayer.push(temp[i]);
+        var nn = temp.length;
+        for(var i = 0; i<nn;i++){
+            var t = Math.floor(Math.random()*temp.length);
+            cplayer.push(temp[t]);
+            console.log(temp[t]);
+            temp.splice(t, 1);
         }
         cplayer.push(cptopcard);
         console.log(cplayer);
@@ -101,24 +103,25 @@ function cview(){
                     document.getElementsByClassName('ccard')[i].style.backgroundImage="url('https://3cnan.github.io/ICS4U/HTML&CSS&JS/poker/"+ ctab[i] + ".png')";
                 }
         }
-    console.log(ctab);
     cpnum = cplayer.length;
-    document.getElementById('cphand').innerHTML='Player'+cpnum;
+    document.getElementById('cphand').innerHTML='player'+cpnum;
     console.log("\n");
+
+
     setTimeout(function(){
         cctopcard = ccom.shift(); //move card from hand to top
-        cctops.innerHTML = "<div id='ccard2'></div>"
         document.getElementById('ccard2').style.backgroundImage="url('https://3cnan.github.io/ICS4U/HTML&CSS&JS/poker/"+ ccom[0] + ".png')";
-        // cpnum = cplayer.length;//determine hand length
-        // document.getElementById('cphand').innerHTML='player'+cpnum;//counter
-        var b = cnum.indexOf(cctopcard.slice(0,1));
         
-        console.log(ccom);
+        var b = cnum.indexOf(cctopcard.slice(0,1));
         if (b!=-1) {
             var temp = ctab.slice(b);
             console.log(ccom);
-            for(var i =0; i<temp.length;i++){
-                ccom.push(temp[i]);
+            var nn = temp.length;
+            for(var i =0; i<nn;i++){
+                var t = Math.floor(Math.random()*temp.length);
+                console.log(temp[t]);
+                ccom.push(temp[t]);
+                temp.splice(t, 1);
             }
             ccom.push(cctopcard);
             console.log(ccom);
@@ -149,15 +152,14 @@ function cview(){
                 }
             }
         ccnum = ccom.length;//determine hand length
-        document.getElementById('cchand').innerHTML='Com'+ccnum;//counter
-        console.log("end");
+        document.getElementById('cchand').innerHTML='com'+ccnum;//counter
+        rdcount++;
+        document.getElementById('crd').innerHTML='Round: '+rdcount;
+        if (rdcount==20&&cplayer.length<ccom.length) {
+            alert('Gameover.you lose, refresh to restart')
+        }
+        else if (rdcount==20&&ccom.length<cplayer.length) {
+            alert('Gameover.you win, refresh to restart')
+        }
     }, 200);
-    rdcount++;
-    document.getElementById('crd').innerHTML='Round: '+rdcount;
-    if (rdcount==15&&cplayer.length<ccom.length) {
-        alert('Gameover.you lose, refresh to restart')
-    }
-    else if (rdcount==15&&ccom.length<cplayer.length) {
-        alert('Gameover.you win, refresh to restart')
-    }
 }
